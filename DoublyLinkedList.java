@@ -84,12 +84,8 @@ public class DoublyLinkedList<T> implements Iterable<T> {
     }
  
     public void prepend (T i){
-        if (count == 0){
-            head = tail = new Node<T>(i);
-        }
-        else {
-            head = new Node<T>(i, head, null);
-        }
+        if (count == 0) head = tail = new Node<T>(i);
+        else  head = new Node<T>(i, head, null);
         count++;
     }
  
